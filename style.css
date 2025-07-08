@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    text-align: center;
+    /* background: radial-gradient(circle, rgba(238, 174, 202, 1) 9%, rgba(148, 187, 233, 1) 69%); */
+    background: #525252;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3d72b4, #525252);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3d72b4, #525252);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1 {
+    color: #d3d63f;
+    font-size: 3rem;
+}
+
+.container {
+    width: 80vw;
+    height: 60vh;
+    margin: 1.5rem auto;
+
+}
+
+.game {
+    width: 70%;
+    height: 100%;
+    margin: auto auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, .2fr);
+    justify-content: center;
+    gap: 1rem;
+    /* display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap; */
+}
+
+.box {
+    border: none;
+    border-radius: .4rem;
+    background-color: white;
+    box-shadow: 0 0 2rem rgb(238, 238, 238, 0.5);
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(165, 42, 42, 0.837);
+    cursor: cell;
+    
+}
+
+/* additional */
+.box {
+    background-image: linear-gradient(to right, #ebe6ec 0%, #FFFFFF 50%, #ECE9E6 100%)
+}
+
+.box {
+    transition: 0.5s;
+    background-size: 200% auto;
+   
+}
+
+.box:hover {
+    background-position: center right;
+    text-decoration: none;
+}
+
+
+
+
+.reset-btn , .exit-btn {
+    background-image: linear-gradient(to right, #6c447e 0%, #d8ac7f 51%, #9e6b9b 100%)
+}
+
+.reset-btn , .exit-btn {
+    margin: 1rem;
+    padding: .7rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 2rem #cd9191;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1rem;
+
+}
+
+button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #f5f1f1;
+    text-decoration: none;
+}
+
+#winner{
+    margin-top: 1rem;
+    font-size: 4rem;
+    color: white;
+}
